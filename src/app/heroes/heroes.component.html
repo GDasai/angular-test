@@ -1,0 +1,46 @@
+<h2 id="personalDetails">Personal details of: {{ hero.name | uppercase }}</h2>
+<h3 id="firstname">Firstname: <b>{{hero. name}}</b></h3>
+<h3 id="surename">Surename: <b>{{hero.surename}}</b></h3>
+<h3 id="dayofbirth">Day of birth: <b>{{hero.dayofbirth}}</b></h3>
+<h3 id="profession">Profession: <b>{{hero.profession}}</b></h3>
+<h3 id="gender">Gender: <b>{{hero.gender}}</b></h3>
+<h2>Fill in your personal details to complete your registration:</h2>
+<div><span>id: </span>{{hero.id}}</div>
+<br>
+<div>
+  <div>
+    <label>Firstname*:
+      <input [(ngModel)]="hero.name" placeholder="enter your firstname" required="required">
+    </label>
+  </div>
+  <br>
+  <div>
+    <label>Lastname*:
+      <input [(ngModel)]="hero.surename" placeholder="enter your surename" required="required">
+    </label>
+  </div>
+  <br>
+  <div>
+    <label>Day of birth*:
+      <input [(ngModel)]="hero.dayofbirth" placeholder="dd-mm-yyyy" type="text">
+    </label>
+  </div>
+  <br>
+  <div>
+    <label>Profession*:
+      <input [(ngModel)]="hero.profession" placeholder="profession" type="text">
+    </label>
+  </div>
+  <br>
+  <div>
+    <label>Gender*:
+      <select [(ngModel)]="hero.gender">
+        <option *ngFor="let gender of gender">{{gender}}</option>
+      </select>
+    </label>
+  </div>
+  <br>
+  <div>
+    <button (click)="deleteHero()">Aanmelden</button>
+  </div>
+</div>
