@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Hero} from '../heroes';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-overview',
@@ -7,11 +8,15 @@ import {Hero} from '../heroes';
   styleUrls: ['./overview.component.css']
 })
 export class OverviewComponent implements OnInit {
-  hero: Hero;
+  @Input() hero: Hero;
 
-  constructor() { }
+  constructor(private router: Router) {
+  }
 
   ngOnInit() {
   }
 
+  sendMeRegister() {
+    this.router.navigate(['register']);
+  }
 }

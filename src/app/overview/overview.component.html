@@ -1,3 +1,9 @@
-<h3 id="nog een">
-  Dit is tekst {{ hero.surename }}
-</h3>
+<h2 id="personalDetails">Personal details of: {{ hero.name | uppercase }} {{hero.surename | uppercase}}</h2>
+<h3 id="firstname">Firstname: <b>{{hero. name}}</b></h3>
+<h3 id="surename">Surename: <b>{{hero.surename}}</b></h3>
+<h3 id="dayofbirth">Day of birth: <b>{{hero.dayofbirth}}</b></h3>
+<h3 id="profession">Profession: <b>{{hero.profession}}</b></h3>
+<h3 id="gender">Gender: <b>{{hero.gender}}</b></h3>
+<div>
+  <button (click)="sendMeRegister()">Send me back</button>
+</div>
