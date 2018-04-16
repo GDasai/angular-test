@@ -1,6 +1,13 @@
-<h2>Fill in your personal details to complete your registration:</h2>
-<h3 id="firstname">Firstname: <b>{{hero.name}}</b></h3>
-<br>
+<div>
+  <div>
+    <h2>Fill in your personal details to complete your registration:</h2>
+  </div>
+  <div>
+    <br>
+    <h3 id="Welcome">Welcome: <b>{{hero.name}} {{hero.surename}}</b></h3>
+    <br>
+  </div>
+</div>
 <div>
   <div>
     <label>Firstname*:
@@ -35,6 +42,6 @@
   </div>
   <br>
   <div>
-    <button (click)="sendMeOverview()">Overview</button>
+    <button (click)="sendMeOverview()">Go to the overview</button>
   </div>
 </div>

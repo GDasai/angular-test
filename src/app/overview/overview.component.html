@@ -1,10 +1,27 @@
-<h2 id="personalDetails">Personal details of: {{ hero.name | uppercase }} {{hero.surename | uppercase}}</h2>
-<h3 id="firstname">Firstname: <b>{{hero.name}}</b></h3>
-<h3 id="surename">Surename: <b>{{hero.surename}}</b></h3>
-<h3 id="dayofbirth">Day of birth: <b>{{hero.dayofbirth}}</b></h3>
-<h3 id="profession">Profession: <b>{{hero.profession}}</b></h3>
-<h3 id="gender">Gender: <b>{{hero.gender}}</b></h3>
 <div>
-  <button (click)="sendMeRegister()">Send me back</button>
+  <div>
+    <h2 id="personalDetails">Personal details of: {{ hero.name | uppercase }} {{hero.surename | uppercase}}</h2>
+    <br>
+  </div>
+  <div>
+    <h4 id="firstname">Firstname: <b>{{hero.name}}</b></h4>
+  </div>
+  <div>
+    <h4 id="surename">Surename: <b>{{hero.surename}}</b></h4>
+  </div>
+  <div>
+    <h4 id="dayofbirth">Day of birth: <b>{{hero.dayofbirth}}</b></h4>
+  </div>
+  <div>
+    <h4 id="profession">Profession: <b>{{hero.profession}}</b></h4>
+  </div>
+  <div>
+    <h4 id="gender">Gender: <b>{{hero.gender}}</b></h4>
+  </div>
+  <div>
+    <button (click)="sendMeRegister()">Send me back</button>
+  </div>
+  <div>
+    <button (click)="sendMeXml()">Send to backend</button>
+  </div>
 </div>
-<p ></p>
