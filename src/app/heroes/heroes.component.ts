@@ -1,6 +1,7 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Hero} from '../heroes';
 import {Router} from '@angular/router';
+import {DataService} from '../data.service';
 
 
 @Component({
@@ -9,23 +10,13 @@ import {Router} from '@angular/router';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-  // hero: Hero = {
-  //
-  //   id: 1,
-  //   name: 'Glenn',
-  //   surename: 'Dasai',
-  //   dayofbirth: '24-11-1987',
-  //   profession: 'Tester',
-  //   gender: ''
-  // };
+  hero: Hero[];
 
-
-  @Input() hero: Hero;
-
-  constructor(private router: Router) {
+  constructor(private router: Router, private _data: DataService) {
   }
 
   ngOnInit() {
+    this._data.heroo.subscribe(res => this.hero = res);
   }
 
   gender = ['Male', 'Female', 'Unknown'];
