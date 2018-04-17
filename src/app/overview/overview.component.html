@@ -3,24 +3,50 @@
     <h2 id="personalDetailsOverview">Personal details of: {{ hero.name | uppercase }} {{hero.surename | uppercase}}</h2>
     <br>
   </div>
-  <div>
-    <h4 id="firstnameOverview">Firstname:<b>{{hero.name}}</b></h4>
-  </div>
-  <div>
-    <h4 id="surenameOverview">Surname:<b>{{hero.surename}}</b></h4>
-  </div>
-  <div>
-    <h4 id="dateofbirthOverview">Date of birth:<b>{{hero.dateofbirth}}</b></h4>
-  </div>
-  <div>
-    <h4 id="professionOverview">Profession:<b>{{hero.profession}}</b></h4>
-  </div>
-  <div>
-    <h4 id="gender"Overview>Gender:<b>{{hero.gender}}</b></h4>
-  </div>
-  <div>
-    <h4 id="emailaddressOverview">Emailaddress:<b>{{hero.emailaddress}}</b></h4>
-  </div>
+</div>
+<div>
+  <form>
+    <div class="form row">
+      <label for="firstnameOverview" class="col-sm-2 col-form-label">Firstname:</label>
+      <div class="col-sm-6">
+        <input type="text" readonly class="form-control-plaintext" id="firstnameOverview" value="{{hero.name}}">
+      </div>
+    </div>
+    <div class="form row">
+      <label for="surnameOverview" class="col-sm-2 col-form-label">Surname:</label>
+      <div class="col-sm-6">
+        <input type="text" readonly class="form-control-plaintext" id="surnameOverview" value="{{hero.surename}}">
+      </div>
+    </div>
+    <div class="form row">
+      <label for="dateofbirthOverview" class="col-sm-2 col-form-label">Date of birth:</label>
+      <div class="col-sm-6">
+        <input type="text" readonly class="form-control-plaintext" id="dateofbirthOverview"
+               value="{{hero.dateofbirth}}">
+      </div>
+    </div>
+    <div class="form row">
+      <label for="profesionOverview" class="col-sm-2 col-form-label">Profession:</label>
+      <div class="col-sm-6">
+        <input type="text" readonly class="form-control-plaintext" id="profesionOverview"
+               value="{{hero.profession}}">
+      </div>
+    </div>
+    <div class="form row">
+      <label for="genderOverview" class="col-sm-2 col-form-label">Gender:</label>
+      <div class="col-sm-6">
+        <input type="text" readonly class="form-control-plaintext" id="genderOverview"
+               value="{{hero.gender}}">
+      </div>
+    </div>
+    <div class="form row">
+      <label for="emailOverview" class="col-sm-2 col-form-label">Emailaddress:</label>
+      <div class="col-sm-6">
+        <input type="text" readonly class="form-control-plaintext" id="emailOverview"
+               value="{{hero.emailaddress}}">
+      </div>
+    </div>
+  </form>
   <div>
     <br>
     <button (click)="sendMeRegister()" class="btn btn-primary">Send me back</button>

@@ -11,13 +11,11 @@
 <div>
   <div class="form-group" class="col-7">
     <label for="firstname">Firstname:</label>
-    <input [(ngModel)]="hero.name" class="form-control" placeholder="enter your firstname" required="required"
-           id="firstname">
+    <input [(ngModel)]="hero.name" class="form-control" placeholder="enter your firstname" id="firstname">
   </div>
   <div class="form-group" class="col-7">
     <label for="surname">Surname:</label>
-    <input [(ngModel)]="hero.surename" class="form-control" placeholder="enter your surname" required="required"
-           id="surname">
+    <input [(ngModel)]="hero.surename" class="form-control" placeholder="enter your surname" id="surname">
   </div>
   <div class="form-group" class="col-7">
     <label for="surname">Date of birth:</label>
@@ -31,13 +29,14 @@
   <div class="form-group" class="col-7">
     <label for="gender">Gender:</label>
     <select class="form-control" [(ngModel)]="hero.gender" id="gender">
-      <option [ngValue]="undefined" disabled  selected>select one option from the dropdownlist</option>
+      <option [ngValue]="undefined" disabled selected>select one option from the dropdownlist</option>
       <option *ngFor="let gender of gender">{{gender}}</option>
     </select>
   </div>
-  <div class="form-group"  class="col-7" >
+  <div class="form-group" class="col-7">
     <label for="email">Email address:</label>
-    <input [(ngModel)]="hero.emailaddress" type="email" class="form-control" id="email" placeholder="name@example.com" aria-describedby="emailhelp">
+    <input [(ngModel)]="hero.emailaddress" type="email" class="form-control" id="email" placeholder="name@example.com"
+           aria-describedby="emailhelp">
     <small id="emailhelp" class="form-text text-muted">
       Enter your email in the following format name@example.com
     </small>
