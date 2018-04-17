@@ -15,7 +15,7 @@ body {
   margin: 2em;
 }
 body, input[text], button {
-  color: #888;
+  color: #000000;
   font-family: Cambria, Georgia;
 }
 /* everywhere else */

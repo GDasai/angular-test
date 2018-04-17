@@ -1,27 +1,33 @@
 <div>
   <div>
-    <h2 id="personalDetails">Personal details of: {{ hero.name | uppercase }} {{hero.surename | uppercase}}</h2>
+    <h2 id="personalDetailsOverview">Personal details of: {{ hero.name | uppercase }} {{hero.surename | uppercase}}</h2>
     <br>
   </div>
   <div>
-    <h4 id="firstname">Firstname: <b>{{hero.name}}</b></h4>
+    <h4 id="firstnameOverview">Firstname:<b>{{hero.name}}</b></h4>
   </div>
   <div>
-    <h4 id="surename">Surename: <b>{{hero.surename}}</b></h4>
+    <h4 id="surenameOverview">Surname:<b>{{hero.surename}}</b></h4>
   </div>
   <div>
-    <h4 id="dayofbirth">Day of birth: <b>{{hero.dayofbirth}}</b></h4>
+    <h4 id="dateofbirthOverview">Date of birth:<b>{{hero.dateofbirth}}</b></h4>
   </div>
   <div>
-    <h4 id="profession">Profession: <b>{{hero.profession}}</b></h4>
+    <h4 id="professionOverview">Profession:<b>{{hero.profession}}</b></h4>
   </div>
   <div>
-    <h4 id="gender">Gender: <b>{{hero.gender}}</b></h4>
+    <h4 id="gender"Overview>Gender:<b>{{hero.gender}}</b></h4>
   </div>
   <div>
-    <button (click)="sendMeRegister()">Send me back</button>
+    <h4 id="emailaddressOverview">Emailaddress:<b>{{hero.emailaddress}}</b></h4>
   </div>
   <div>
-    <button (click)="sendMeXml()">Send to backend</button>
+    <br>
+    <button (click)="sendMeRegister()" class="btn btn-primary">Send me back</button>
+    <br>
+    <br>
+  </div>
+  <div>
+    <button (click)="sendMeXml()" class="btn btn-primary">Send to backend</button>
   </div>
 </div>

@@ -1,7 +1,8 @@
 export class Hero {
   name: string;
   surename: string;
-  dayofbirth:  string;
+  dateofbirth:  string;
   profession: string;
   gender: string;
+  emailaddress: string;
 }
