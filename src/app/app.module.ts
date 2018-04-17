@@ -8,13 +8,15 @@ import {HeroesComponent} from './heroes/heroes.component';
 import {OverviewComponent} from './overview/overview.component';
 import {AppRoutingModule} from './/app-routing.module';
 import {DataService} from './data.service';
+import {BackendComponent} from './backend/backend.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
-    OverviewComponent
+    OverviewComponent,
+    BackendComponent
   ],
   imports: [
     BrowserModule,
