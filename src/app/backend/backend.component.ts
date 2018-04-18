@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {DataService} from '../data.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-backend',
@@ -9,10 +10,14 @@ import {DataService} from '../data.service';
 export class BackendComponent implements OnInit {
   hero: any;
 
-  constructor(private _data: DataService) {
+  constructor(private router: Router, private _data: DataService) {
   }
 
   ngOnInit() {
     this._data.heroo.subscribe(res => this.hero = res);
+  }
+
+  sendMeOverview() {
+    this.router.navigate(['overview']);
   }
 }
