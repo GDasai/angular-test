@@ -47,13 +47,15 @@
       </div>
     </div>
   </form>
-  <div>
-    <br>
-    <button (click)="sendMeRegister()" class="btn btn-primary">Send me back</button>
-    <br>
-    <br>
-  </div>
-  <div>
-    <button (click)="sendMeBackend()" class="btn btn-primary">Send to backend</button>
+  <div class="form-row align-items-center">
+    <div class="col-auto">
+      <br>
+      <button (click)="sendMeRegister()" class="btn btn-primary" id="SendMeBack">Send me back</button>
+      <br>
+      <br>
+    </div>
+    <div class="col-auto">
+      <button (click)="sendMeBackend()" class="btn btn-primary" id="SendToBackend">Send to backend</button>
+    </div>
   </div>
 </div>
