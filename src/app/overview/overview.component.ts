@@ -18,7 +18,7 @@ export class OverviewComponent implements OnInit {
   }
 
   sendMeRegister() {
-    this.router.navigate(['register']);
+    this.router.navigate(['']);
   }
 
   sendMeBackend() {

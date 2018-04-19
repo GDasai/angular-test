@@ -6,7 +6,7 @@ import {BackendComponent} from './backend/backend.component';
 
 const routes: Routes = [
   {
-    path: 'register',
+    path: '',
     component: HeroesComponent
   },
   {
