@@ -8,10 +8,10 @@
     <br>
   </div>
 </div>
-<div>
+<div class="form-group">
   <div class="form-group" class="col-7">
     <label for="firstname">Firstname:</label>
-    <input [(ngModel)]="hero.name" class="form-control" placeholder="enter your firstname" id="firstname">
+    <input [(ngModel)]="hero.name" class="form-control" placeholder="enter your firstname" id="firstname" type="text">
   </div>
   <div class="form-group" class="col-7">
     <label for="surname">Surname:</label>
@@ -41,9 +41,14 @@
       Enter your email in the following format name@example.com
     </small>
   </div>
-  <br>
-  <div>
-    <button (click)="sendMeOverview()" class="btn btn-primary">Go to the overview</button>
+  <div class="form-group" class="col-7">
+    <label for="textarea1">Remarks:</label>
+    <textarea [(ngModel)]="hero.remarks" class="form-control" id="textarea1" rows="2" maxlength="100"></textarea>
   </div>
 </div>
+<br>
+<div>
+  <button (click)="sendMeOverview()" class="btn btn-primary" id="GoToOverview">Go to the overview</button>
+</div>
+
 
