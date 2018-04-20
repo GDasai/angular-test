@@ -10,6 +10,8 @@ import {AppRoutingModule} from './/app-routing.module';
 import {DataService} from './data.service';
 import {BackendComponent} from './backend/backend.component';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {AngularFontAwesomeModule} from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import {BackendComponent} from './backend/backend.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule.forRoot(),
+    AngularFontAwesomeModule
   ],
   providers: [
     DataService
