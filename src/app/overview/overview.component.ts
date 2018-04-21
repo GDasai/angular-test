@@ -24,4 +24,14 @@ export class OverviewComponent implements OnInit {
   sendMeBackend() {
     this.router.navigate(['backend']);
   }
+
+  getFormattedDate(): string {
+
+    let formattedDate = null;
+    if (this.hero.dateofbirth !== null && this.hero.dateofbirth !== undefined) {
+      formattedDate = this.hero.dateofbirth.day + '-' + this.hero.dateofbirth.month + '-' + this.hero.dateofbirth.year;
+    }
+    return formattedDate;
+  }
+
 }

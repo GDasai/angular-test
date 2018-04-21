@@ -55,6 +55,41 @@
     <label for="textarea1">Remarks:</label>
     <textarea [(ngModel)]="hero.remarks" class="form-control" id="textarea1" rows="2" maxlength="100"></textarea>
   </div>
+  <br>
+  <div class="form-group" class="col-7">
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Click on the checkbox to save this
+      </label>
+    </div>
+  </div>
+  <br>
+  <div class="form-group" class="col-7">
+    <div class="row" class="form-check-inline">
+      <legend class="col-form-label col-sm-5 pt-0">Did you enjoy this training?</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" [(ngModel)]="hero.enjoy" id="gridRadios1" value="Yes">
+          <label class="form-check-label" for="gridRadios1">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" [(ngModel)]="hero.enjoy" id="gridRadios2" value="No">
+          <label class="form-check-label" for="gridRadios2">
+            No
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="gridRadios" [(ngModel)]="hero.enjoy" id="gridRadios3" value="I don't know">
+          <label class="form-check-label" for="gridRadios3">
+            I don't know
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <br>
 <div>

@@ -8,4 +8,5 @@ export class Hero {
   gender: string;
   emailaddress: string;
   remarks: string;
+  enjoy: string;
 }

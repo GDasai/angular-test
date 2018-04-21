@@ -24,5 +24,4 @@ export class HeroesComponent implements OnInit {
   sendMeOverview() {
     this.router.navigate(['overview']);
   }
-
 }
