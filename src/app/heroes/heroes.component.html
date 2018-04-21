@@ -10,11 +10,11 @@
 </div>
 <div class="form-group">
   <div class="form-group" class="col-7">
-    <label for="firstname">Firstname:</label>
+    <label for="firstname" id="firstnameLabel">Firstname:</label>
     <input [(ngModel)]="hero.name" class="form-control" placeholder="enter your firstname" id="firstname" type="text">
   </div>
   <div class="form-group" class="col-7">
-    <label for="surname">Surname:</label>
+    <label for="surname" id="surnameLabel">Surname:</label>
     <input [(ngModel)]="hero.surname" class="form-control" placeholder="enter your surname" id="surname">
   </div>
   <!--<div class="form-group" class="col-7">-->
@@ -22,7 +22,7 @@
   <!--<input [(ngModel)]="hero.dateofbirth" class="form-control" placeholder="dd-mm-jjjj" type="text" id="dateofbirth">-->
   <!--</div>-->
   <div class="form-group" class="col-7">
-    <label for="dateofbirth">Date of birth:</label>
+    <label for="dateofbirth" id="dateofbirthLabel">Date of birth:</label>
     <div class="input-group datepicker-input">
       <input class="form-control" placeholder="dd-mm-jjjj"
              name="dp" [(ngModel)]="hero.dateofbirth" ngbDatepicker #d="ngbDatepicker" id="dateofbirth">
@@ -32,19 +32,19 @@
     </div>
   </div>
   <div class="form-group" class="col-7">
-    <label for="profession">Profession:</label>
+    <label for="profession" id="professionLabel">Profession:</label>
     <input [(ngModel)]="hero.profession" class="form-control" placeholder="enter your profession" type="text"
            id="profession">
   </div>
   <div class="form-group" class="col-7">
-    <label for="gender">Gender:</label>
+    <label for="gender" id="genderLabel">Gender:</label>
     <select class="form-control" [(ngModel)]="hero.gender" id="gender">
       <option [ngValue]="undefined" disabled selected>select one option from the dropdownlist</option>
       <option *ngFor="let gender of gender">{{gender}}</option>
     </select>
   </div>
   <div class="form-group" class="col-7">
-    <label for="email">Email address:</label>
+    <label for="email" id="emailLabel">Email address:</label>
     <input [(ngModel)]="hero.emailaddress" type="email" class="form-control" id="email" placeholder="name@example.com"
            aria-describedby="emailhelp">
     <small id="emailhelp" class="form-text text-muted">
@@ -52,14 +52,14 @@
     </small>
   </div>
   <div class="form-group" class="col-7">
-    <label for="textarea1">Remarks:</label>
+    <label for="textarea1" id="remarksLabel">Remarks:</label>
     <textarea [(ngModel)]="hero.remarks" class="form-control" id="textarea1" rows="2" maxlength="100"></textarea>
   </div>
   <br>
   <div class="form-group" class="col-7">
     <div class="form-check form-check-inline">
       <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-      <label class="form-check-label" for="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1" id="checkboxLabel">
         Click on the checkbox to save this
       </label>
     </div>
