@@ -26,7 +26,7 @@ export class HeroesComponent implements OnInit {
   }
 
   alertShow() {
-    alert('Hallo ik ben een Alert box');
+    alert('Hello i am an Alert box');
   }
 
 }
