@@ -24,4 +24,9 @@ export class HeroesComponent implements OnInit {
   sendMeOverview() {
     this.router.navigate(['overview']);
   }
+
+  alertShow() {
+    alert('Hallo ik ben een Alert box');
+  }
+
 }
