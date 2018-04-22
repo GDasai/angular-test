@@ -9,4 +9,5 @@ export class Hero {
   emailaddress: string;
   remarks: string;
   enjoy: string;
+  checkbox: boolean;
 }
