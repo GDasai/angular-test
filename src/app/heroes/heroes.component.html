@@ -4,14 +4,18 @@
   </div>
   <div>
     <br>
-    <h3 id="Welcome">Welcome: <b id="fullname">{{hero.name}} {{hero.surname}}</b></h3>
+    <h3 id="Welcome">Welcome: <b id="fullname">{{hero.firstname}} {{hero.prefix}} {{hero.surname}}</b></h3>
     <br>
   </div>
 </div>
 <div class="form-group">
   <div class="form-group" class="col-7">
     <label for="firstname" id="firstnameLabel">Firstname:</label>
-    <input [(ngModel)]="hero.name" class="form-control" placeholder="enter your firstname" id="firstname" type="text">
+    <input [(ngModel)]="hero.firstname" class="form-control" placeholder="enter your firstname" id="firstname" type="text">
+  </div>
+  <div class="form-group" class="col-7">
+    <label for="prefix" id="prefixLabel">Prefix:</label>
+    <input [(ngModel)]="hero.prefix" class="form-control" placeholder="enter your prefix" id="prefix">
   </div>
   <div class="form-group" class="col-7">
     <label for="surname" id="surnameLabel">Surname:</label>

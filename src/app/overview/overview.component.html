@@ -1,7 +1,8 @@
 <div>
   <div>
     <br>
-    <h2 id="personalDetailsOverview">Personal details of: {{ hero.name | uppercase }} {{hero.surname | uppercase}}</h2>
+    <h2 id="personalDetailsOverview">Personal details of: {{ hero.firstname | uppercase }} {{hero.prefix | uppercase}}
+      {{hero.surname | uppercase}}</h2>
     <br>
   </div>
 </div>
@@ -10,7 +11,13 @@
     <div class="form row">
       <label for="firstnameOverview" class="col-sm-2 col-form-label" id="firstnameLabel">Firstname:</label>
       <div class="col-sm-6">
-        <input type="text" readonly class="form-control-plaintext" id="firstnameOverview" value="{{hero.name}}">
+        <input type="text" readonly class="form-control-plaintext" id="firstnameOverview" value="{{hero.firstname}}">
+      </div>
+    </div>
+    <div class="form row">
+      <label for="prefixOverview" class="col-sm-2 col-form-label" id="prefixLabel">Prefix:</label>
+      <div class="col-sm-6">
+        <input type="text" readonly class="form-control-plaintext" id="prefixOverview" value="{{hero.prefix}}">
       </div>
     </div>
     <div class="form row">
@@ -23,7 +30,7 @@
       <label for="dateofbirthOverview" class="col-sm-2 col-form-label" id="dateofbirthLabel">Date of birth:</label>
       <div class="col-sm-6">
         <input type="text" readonly class="form-control-plaintext" id="dateofbirthOverview"
-        [value]="getFormattedDate()">
+               [value]="getFormattedDate()">
       </div>
     </div>
     <div class="form row">
