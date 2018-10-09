@@ -21,20 +21,20 @@
     <label for="surname" id="surnameLabel">Surname:</label>
     <input [(ngModel)]="hero.surname" class="form-control" placeholder="enter your surname" id="surname">
   </div>
-  <!--<div class="form-group" class="col-7">-->
-  <!--<label for="dateofbirth">Date of birth:</label>-->
-  <!--<input [(ngModel)]="hero.dateofbirth" class="form-control" placeholder="dd-mm-jjjj" type="text" id="dateofbirth">-->
-  <!--</div>-->
   <div class="form-group" class="col-7">
-    <label for="dateofbirth" id="dateofbirthLabel">Date of birth:</label>
-    <div class="input-group datepicker-input">
-      <input class="form-control" placeholder="dd-mm-jjjj"
-             name="dp" [(ngModel)]="hero.dateofbirth" ngbDatepicker #d="ngbDatepicker" id="dateofbirth">
-      <button class="input-group-addon" (click)="d.toggle()" type="button">
-        <span class="fa fa-calendar"></span>
-      </button>
-    </div>
+  <label for="dateofbirth">Date of birth:</label>
+  <input [(ngModel)]="hero.dateofbirth" class="form-control" placeholder="dd-mm-jjjj" type="text" id="dateofbirth">
   </div>
+  <!--<div class="form-group" class="col-7">-->
+    <!--<label for="dateofbirth" id="dateofbirthLabel">Date of birth:</label>-->
+    <!--<div class="input-group datepicker-input">-->
+      <!--<input class="form-control" placeholder="dd-mm-jjjj"-->
+             <!--name="dp" [(ngModel)]="hero.dateofbirth" ngbDatepicker #d="ngbDatepicker" id="dateofbirth">-->
+      <!--<button class="input-group-addon" (click)="d.toggle()" type="button">-->
+        <!--<span class="fa fa-calendar"></span>-->
+      <!--</button>-->
+    <!--</div>-->
+  <!--</div>-->
   <div class="form-group" class="col-7">
     <label for="profession" id="professionLabel">Profession:</label>
     <input [(ngModel)]="hero.profession" class="form-control" placeholder="enter your profession" type="text"
